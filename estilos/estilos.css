@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('../fonts/Minecraft.ttf') format('truetype');
+  }
+*{
+    font-family: minecraft;
+}
+
+#menu_server {
+  position: relative;
+  background-image: url("../imagenes/minecraft-fondo.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#menu_server_img {
+  visibility: hidden;
+}
+#menu_titulo {
+  width: 40%;
+  position: absolute;
+  text-align: center;
+  z-index: 5;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#menu_titulo p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5em;
+  background-color: #f0a72090;
+}
+#menu_titulo button {
+  color: white;
+  background-color: #36b030;
+  padding: 14px 16px;
+  border: none;
+  transition-duration: 0.4s;
+  width: 200px;
+  font-size: 20px;
+}
+#menu_titulo button:hover {
+  background-color: #333333a3;
+  color: #bcffb7;
+  border: #36b030 solid 4px;
+}
+
+#menu-lista{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-image: url("../imagenes/header-background.jpg");
+}
+#menu-lista img{
+    width: 100px;
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+}
+#menu-lista ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+#menu-lista ul li {
+   
+    color: white;
+    background-color: #36b030;
+    padding: 10px 13px;
+    border: none;
+    transition-duration: 0.4s;
+    width: 120px;
+    font-size: 15px;
+  text-align: center;
+  margin-right: 40px;
+}
+#menu-lista ul li a {
+  text-decoration: none;
+  color: white;
+}
+#menu-lista ul li:hover {
+  background-color: green;
+}
+
+
+#carta-noticias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.carta-cabecera{
+   
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.carta-seccion button{
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #36b030;
+    padding: 10px 13px;
+    border: none;
+    transition-duration: 0.4s;
+    width: 120px;
+    font-size: 15px;
+  text-align: center;
+}
+.carta-seccion button:hover {
+    background-color: green;
+  }
+.carta-seccion{
+    position: relative;
+    color: white;
+    background-color: rgba(0, 81, 0, 0.837);
+    padding: 30px;
+}
+.carta-seccion .carta-titulo{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.carta-seccion .carta-descripcion{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.carta-seccion p{
+    margin: 0;
+}
+.carta-cabecera img{
+    width: 100%;
+}
