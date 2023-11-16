@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Causacraft</title>
     <link rel="stylesheet" href="../estilos/estilos.css" />
+    <link rel="stylesheet" href="../estilos/efectoZoom.css" />
+    <link rel="stylesheet" href="../estilos/imagenZoom.css" />
+    <link rel="icon" href="../imagenes/logo.png" />
   </head>
   <body>
     <main>
@@ -19,7 +22,7 @@
           <li>Mercancias</li>
         </ul>
       </div>
-      <div id="menu_server">
+      <div id="menu_server" class="efectoZoom">
         <img
           id="menu_server_img"
           src="../imagenes/minecraft-fondo.jpg"
@@ -37,9 +40,9 @@
         </div>
       </div>
     </main>
-    <section>
+    <section id="carta">
       <div id="carta-noticias">
-        <div>
+        <div class="carta-columna">
           <div class="carta-cabecera">
             <img src="../imagenes/noticias/noticia01.png" alt="" />
             <div class="carta-seccion">
@@ -61,50 +64,57 @@
             </div>
           </div>
         </div>
-        <div>
-            <div class="carta-cabecera">
-              <img src="../imagenes/noticias/noticia01.png" alt="" />
-              <div class="carta-seccion">
-                <p class="carta-titulo">MI DIARIO DE LA TIERRA DE MINECRAFT</p>
-                <p class="carta-descripcion">
-                  Muy muy lejos, detrás del mundo...
-                </p>
-                <button>Noticia</button>
-              </div>
-            </div>
-            <div class="carta-cabecera">
-              <img src="../imagenes/noticias/noticia02.png" alt="" />
-              <div class="carta-seccion">
-                <p class="carta-titulo">CÓMO ACELERAR MINECRAFT</p>
-                <p class="carta-descripcion">
-                  Muy muy lejos, detrás del mundo...
-                </p>
-                <button>Cultura</button>
-              </div>
+        <div class="carta-columna">
+          <div class="carta-cabecera">
+            <img src="../imagenes/noticias/noticia03.png" alt="" />
+            <div class="carta-seccion">
+              <p class="carta-titulo">10 COSAS QUE PROBABLEMENTE NO SABÍAS</p>
+              <p class="carta-descripcion">Los lenguajes latinos son...</p>
+              <button>Novedad</button>
             </div>
           </div>
-          <div>
-            <div class="carta-cabecera">
-              <img src="../imagenes/noticias/noticia01.png" alt="" />
-              <div class="carta-seccion">
-                <p class="carta-titulo">MI DIARIO DE LA TIERRA DE MINECRAFT</p>
-                <p class="carta-descripcion">
-                  Muy muy lejos, detrás del mundo...
-                </p>
-                <button>Noticia</button>
-              </div>
-            </div>
-            <div class="carta-cabecera">
-              <img src="../imagenes/noticias/noticia02.png" alt="" />
-              <div class="carta-seccion">
-                <p class="carta-titulo">CÓMO ACELERAR MINECRAFT</p>
-                <p class="carta-descripcion">
-                  Muy muy lejos, detrás del mundo...
-                </p>
-                <button>Cultura</button>
-              </div>
+          <div class="carta-cabecera">
+            <img src="../imagenes/noticias/noticia04.png" alt="" />
+            <div class="carta-seccion">
+              <p class="carta-titulo">PACK DE GRÁFICOS SUPERREALISTAS</p>
+              <p class="carta-descripcion">Los lenguajes latinos son...</p>
+              <button>Noticia</button>
             </div>
           </div>
+        </div>
+        <div class="carta-columna">
+          <div class="carta-cabecera">
+            <img src="../imagenes/noticias/noticia05.png" alt="" />
+            <div class="carta-seccion">
+              <p class="carta-titulo">NOTAS DEL PARCHE: INVENTARIO</p>
+              <p class="carta-descripcion">Un nuevo evento se aproxima...</p>
+              <button>Noticia</button>
+            </div>
+          </div>
+          <div class="carta-cabecera">
+            <img src="../imagenes/noticias/noticia06.png" alt="" />
+            <div class="carta-seccion">
+              <p class="carta-titulo">CELEBRA QUIÉN ERES CADA DÍA</p>
+              <p class="carta-descripcion">Un nuevo evento se aproxima...</p>
+              <button>Cultura</button>
+            </div>
+          </div>
+        </div>
+        <img
+          id="carta-sticker01"
+          src="../imagenes/stickers/sticker01.png"
+          alt=""
+        />
+        <img
+          id="carta-sticker03"
+          src="../imagenes/stickers/sticker03.png"
+          alt=""
+        />
+        <img id="carta-img-titulo" src="../imagenes/NOTICIAS.png" alt="" />
+      </div>
+      <div id="carta-adicional">
+        <button id="carta-boton">Cargar más</button>
+        <img src="../imagenes/banner.jpg" alt="" class="imagenZoom"/>
       </div>
     </section>
   </body>

@@ -5,16 +5,24 @@
 *{
     font-family: minecraft;
 }
-
+body{
+  margin: 0;
+}
+main{
+  margin-bottom: 140px;
+}
 #menu_server {
   position: relative;
   background-image: url("../imagenes/minecraft-fondo.jpg");
   background-size: 100%;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 #menu_server_img {
   visibility: hidden;
+  width: 100%;
 }
 #menu_titulo {
   width: 40%;
@@ -86,16 +94,44 @@
 }
 
 
+
 #carta-noticias{
+  position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+#carta-sticker01{
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+#carta-sticker03{
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  z-index: -1;
+}
+#carta-img-titulo{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.carta-columna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  margin-right: 20px;
 }
 .carta-cabecera{
    
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -119,7 +155,7 @@
     position: relative;
     color: white;
     background-color: rgba(0, 81, 0, 0.837);
-    padding: 30px;
+    padding: 40px;
 }
 .carta-seccion .carta-titulo{
     font-size: 30px;
@@ -135,4 +171,27 @@
 }
 .carta-cabecera img{
     width: 100%;
+}
+#carta-adicional{
+  display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#carta-boton{
+  color: white;
+  background-color: #36b030;
+  padding: 14px 16px;
+  border: none;
+  transition-duration: 0.4s;
+  width: 200px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#carta-boton:hover {
+  background-color: green;
 }
