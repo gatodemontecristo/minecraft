@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="../estilos/efectoZoom.css" />
     <link rel="stylesheet" href="../estilos/imagenZoom.css" />
     <link rel="icon" href="../imagenes/logo.png" />
+    <!--Animación WOW-->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
   </head>
   <body>
     <audio autoplay="true" hidden loop="loop" src="../audio/Sweden.mp3"></audio>
     <main>
       <div id="menu-lista">
-        <ul>
+        <ul class="wow bounceInLeft"  data-wow-delay="0.3s">
           <li>Noticias</li>
           <li>Stream</li>
         </ul>
         <img src="../imagenes/mojang.png" alt="" />
-        <ul>
+        <ul class="wow bounceInRight"  data-wow-delay="0.3s">
           <li>Destacado</li>
           <li>Mercancias</li>
         </ul>
@@ -29,8 +31,8 @@
           src="../imagenes/minecraft-fondo.jpg"
           alt=""
         />
-        <div id="menu_titulo">
-          <img src="../imagenes/CAUSACRAFT.png" alt="" />
+        <div id="menu_titulo"  >
+          <img class="wow bounceInDown center" data-wow-delay="0.3s" src="../imagenes/CAUSACRAFT.png" alt="" />
           <p>
             ¡Bienvenidos a "CAUSACRAFT", el servidor privado diseñado
             exclusivamente para la comunidad peruana! Sumérgete en una
@@ -102,11 +104,13 @@
           </div>
         </div>
         <img
+        class="wow rollIn" data-wow-delay="0.3s"
           id="carta-sticker01"
           src="../imagenes/stickers/sticker01.png"
           alt=""
         />
         <img
+        class="wow bounceInRight" data-wow-delay="0.3s"
           id="carta-sticker03"
           src="../imagenes/stickers/sticker03.png"
           alt=""
@@ -114,8 +118,8 @@
         <img id="carta-img-titulo" src="../imagenes/NOTICIAS.png" alt="" />
       </div>
       <div id="carta-adicional">
-        <button id="carta-boton">Cargar más</button>
-        <img src="../imagenes/banner.jpg" alt="" class="imagenZoom" />
+        <button id="carta-boton" class="wow flipInX center" data-wow-delay="0.3s">Cargar más</button>
+        <img class="imagenZoom"  src="../imagenes/banner.jpg" alt=""/>
       </div>
     </section>
     <section id="stream">
@@ -125,15 +129,19 @@
         alt=""
       />
       <div id="stream_video">
-        <img id="stream_img_titulo" src="../imagenes/STREAM.png" alt="" />
-        <video controls src="../video/10 years.mp4"></video>
+        <img id="stream_img_titulo" src="../imagenes/STREAM.png" alt=""
+        />
+        <video  class="wow pulse" data-wow-duration="0.25s"
+        controls src="../video/10 years.mp4"></video>
       </div>
       <img
+      class="wow rollIn" data-wow-delay="0.3s" 
         id="carta-sticker02"
         src="../imagenes/stickers/sticker02.png"
         alt=""
       />
       <img
+      class="wow bounceInRight" data-wow-delay="0.3s" 
         id="carta-sticker04"
         src="../imagenes/stickers/sticker04.png"
         alt=""
@@ -147,54 +155,58 @@
       />
 
       <div class="parent">
-        <img  id="destacados_logo" src="../imagenes/NOVEDADES.png" alt="" />
-        <div class="div1"> <div id="destacados_seccion01">
-          <img src="../imagenes/noticias/noticia05.png" alt="" />
-          <div class="destacados_principal">
-          <p class="destacados_titulo_v">NOTAS DEL PARCHE: INVENTARIO</p>
-          <p class="destacados_descripcion_v">
-            Un nuevo evento se aproxima...
-          </p>
-        </div>
-        </div></div>
-        <div class="div2"><div class="destacados_tarjeta">
-          <img src="../imagenes/noticias/noticia02.png" alt="" />
-          <div class="destacados_texto">
-            <p class="destacados_titulo_h">
-              MI DIARIO DE LA TIERRA DE MINECRAFT
-            </p>
-            <p class="destacados_descripcion_h">
-              Muy muy lejos, detrás del mundo...
-            </p>
+        <img id="destacados_logo" src="../imagenes/NOVEDADES.png" alt="" />
+        <div class="div1 wow bounceInLeft" data-wow-delay="0.2s">
+          <div id="destacados_seccion01">
+            <img src="../imagenes/noticias/noticia05.png" alt="" />
+            <div class="destacados_principal">
+              <p class="destacados_titulo_v">NOTAS DEL PARCHE: INVENTARIO</p>
+              <p class="destacados_descripcion_v">
+                Un nuevo evento se aproxima...
+              </p>
+            </div>
           </div>
-        </div> </div>
-        <div class="div3"><div class="destacados_tarjeta">
-          <img src="../imagenes/noticias/noticia04.png" alt="" />
-          <div class="destacados_texto">
-            <p class="destacados_titulo_h">
-              CELEBRA QUIÉN ERES CADA DÍA
-            </p>
-            <p class="destacados_descripcion_h">
-              Un nuevo evento se aproxima...
-            </p>
-          </div>
-        </div> </div>
-        <div class="div4"> <div class="destacados_tarjeta">
-          <img src="../imagenes/noticias/noticia06.png" alt="" />
-          <div class="destacados_texto">
-            <p class="destacados_titulo_h">
-              CÓMO ACELERAR MINECRAFT
-            </p>
-            <p class="destacados_descripcion_h">
-              Un nuevo evento se aproxima...
-            </p>
-          </div>
-        </div></div>
         </div>
-       
-        <div id="destacados-adicional">
-          <button id="destacados-boton">Cargar más</button>
+        <div class="div2 " >
+          <div class="destacados_tarjeta wow bounceInRight center" data-wow-delay="0.2s" >
+            <img src="../imagenes/noticias/noticia02.png" alt="" />
+            <div class="destacados_texto">
+              <p class="destacados_titulo_h">
+                MI DIARIO DE LA TIERRA DE MINECRAFT
+              </p>
+              <p class="destacados_descripcion_h">
+                Muy muy lejos, detrás del mundo...
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="div3">
+          <div class="destacados_tarjeta wow bounceInRight center" data-wow-delay="0.3s">
+            <img src="../imagenes/noticias/noticia04.png" alt="" />
+            <div class="destacados_texto">
+              <p class="destacados_titulo_h">CELEBRA QUIÉN ERES CADA DÍA</p>
+              <p class="destacados_descripcion_h">
+                Un nuevo evento se aproxima...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="div4">
+          <div class="destacados_tarjeta wow bounceInRight center" data-wow-delay="0.4s">
+            <img src="../imagenes/noticias/noticia06.png" alt="" />
+            <div class="destacados_texto">
+              <p class="destacados_titulo_h">CÓMO ACELERAR MINECRAFT</p>
+              <p class="destacados_descripcion_h">
+                Un nuevo evento se aproxima...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="destacados-adicional">
+        <button id="destacados-boton">Cargar más</button>
+      </div>
 
       <!-- <div id="destacados_tabla">
         <div id="destacados_seccion01">
@@ -241,8 +253,6 @@
           </div>
         </div>
       </div> -->
-    
-    
     </section>
 
     <section id="inventario">
@@ -252,39 +262,49 @@
         alt=""
       />
       <div id="inventario_galeria">
-        <div class="inventario_carta">
-          <img src="../imagenes/items/muñeco.png" alt="">
+        <div class="inventario_carta wow bounceInLeft">
+          <img src="../imagenes/items/muñeco.png" alt="" />
           <a href=""><p class="inventario_titulo">MINECRAFT ZOMBIE TOY</p></a>
-          
+
           <div class="oferta">
             <p>$31.99</p>
             <p><span>$35.99</span></p>
           </div>
         </div>
-        <div class="inventario_carta">
-          <img src="../imagenes/items/polo.png" alt="">
-          <a href=""><p class="inventario_titulo">MINECRAFT T-SHIRT BLACK</p></a>
-          
+        <div class="inventario_carta wow bounceInUp center">
+          <img src="../imagenes/items/polo.png" alt="" />
+          <a href=""
+            ><p class="inventario_titulo">MINECRAFT T-SHIRT BLACK</p></a
+          >
+
           <div class="oferta">
             <p>$39.99</p>
             <p><span>$49.99</span></p>
           </div>
         </div>
-        <div class="inventario_carta">
-          <img src="../imagenes/items/lonchera.png" alt="">
-          
+        <div class="inventario_carta wow bounceInRight">
+          <img src="../imagenes/items/lonchera.png" alt="" />
+
           <a href=""><p class="inventario_titulo">MINER BACKPACK</p></a>
           <div class="oferta">
             <p>$69.99</p>
             <p><span>$79.99</span></p>
           </div>
         </div>
-        <img id="inventario_img_titulo" src="../imagenes/MERCANCIAS.png" alt="" />
-        
+        <img
+          id="inventario_img_titulo"
+          src="../imagenes/MERCANCIAS.png"
+          alt=""
+        />
       </div>
       <div id="inventario-adicional">
         <button id="inventario-boton">Ir a la tienda</button>
       </div>
     </section>
   </body>
+  <!--Animación WOW-->
+  <script src="../lib/wow/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </html>

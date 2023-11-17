@@ -373,7 +373,7 @@ border-bottom: 30px #64DD2E solid;
       width: 100%;
       align-items: center;
       justify-content: center;
-     
+     margin-top: 20px;
   }
   #destacados-boton{
     color: white;
