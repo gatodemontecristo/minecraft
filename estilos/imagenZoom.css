@@ -16,8 +16,8 @@
 }
 
 .imagenZoom {
-    -webkit-animation: zoom-b 10s linear infinite alternate; /* Safari 4+ */
-    -moz-animation:    zoom-b 10s linear infinite alternate; /* Fx 5+ */
-    -o-animation:      zoom-b 10s linear infinite alternate; /* Opera 12+ */
-    animation:         zoom-b 10s linear infinite alternate; /* IE 10+, Fx 29+ */
+    -webkit-animation: zoom-b 5s linear infinite alternate; /* Safari 4+ */
+    -moz-animation:    zoom-b 5s linear infinite alternate; /* Fx 5+ */
+    -o-animation:      zoom-b 5s linear infinite alternate; /* Opera 12+ */
+    animation:         zoom-b 5s linear infinite alternate; /* IE 10+, Fx 29+ */
   }
