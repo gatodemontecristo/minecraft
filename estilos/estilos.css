@@ -2,6 +2,8 @@
     font-family: 'minecraft';
     src: url('../fonts/Minecraft.ttf') format('truetype');
   }
+
+  
 *{
     font-family: minecraft;
 }
@@ -481,4 +483,118 @@ border-bottom: 30px #64DD2E solid;
   }
   #inventario-boton:hover {
     background-color: green;
+  }
+
+  footer {
+    position: relative;
+    background-image: url("../imagenes/fondos/fondoPiedra.jpg");
+    background-size: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #footer_fondo_img {
+    visibility: hidden;
+    width: 100%;
+    
+  }
+
+  .footer_contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #footer_seccion img{
+    margin-bottom: 50px;
+  }
+  #footer_seccion{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+    width: 50%;
+    position: absolute;
+    text-align: center;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+ 
+  .footer_contenedor button{
+    color: white;
+    background-color: #36b030;
+    padding: 14px 16px;
+    border: none;
+    transition-duration: 0.4s;
+  }
+  .footer_contenedor button :hover {
+    background-color: green;
+  }
+  #footer_seccion p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 0;
+    margin-bottom: 50px;
+}
+  button#icon_facebook{
+    &::after {
+      content: url('../imagenes/iconos/facebook.svg');
+      display: block;
+      height: 1.5em;
+      width: 1.5em;
+    }
+  }
+  button#icon_instagram{
+    &::after {
+      content: url('../imagenes/iconos/instagram.svg');
+      display: block;
+      height: 1.5em;
+      width: 1.5em;
+    }
+  }
+  button#icon_twitch{
+    &::after {
+      content: url('../imagenes/iconos/twitch.svg');
+      display: block;
+      height: 1.5em;
+      width: 1.5em;
+    }
+  }
+  button#icon_twitter{
+    &::after {
+      content: url('../imagenes/iconos/twitter.svg');
+      display: block;
+      height: 1.5em;
+      width: 1.5em;
+    }
+  }
+  button#icon_youtube{
+    &::after {
+      content: url('../imagenes/iconos/youtube.svg');
+      display: block;
+      height: 1.5em;
+      width: 1.5em;
+    }
+  }
+  #footer_licencia{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background-color: #191919;
+    color: white;
+    font-size: 15px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #carta-sticker05{
+    position: absolute;
+    right: 0%;
+    bottom: -120px;
+    z-index: 5;
   }
