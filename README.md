@@ -10,3 +10,6 @@ Página de iconos -> https://fontawesome.com/search?o=r&m=free
 Página de efectos -> https://wowjs.uk/
 
 
+<div align="center" display="flex">
+     <img src="captura.png" alt="Sección de configuración" width="100%" >
+  </div>
