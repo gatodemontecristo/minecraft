@@ -7,9 +7,10 @@ Arquitectura y Entornos Web Cibertec - Proyecto Minecraft con efectos
 
 Página de iconos -> https://fontawesome.com/search?o=r&m=free
 
-Página de efectos -> https://wowjs.uk/
+Página de efectos -> https://wowjs.uk/  |  https://animate.style/
+
+Página de Mockup -> https://shots.so/
+
+![223shots_so](https://github.com/gatodemontecristo/minecraft/assets/61488294/43aeb863-4c85-4e64-9ced-8d51078cf077)
 
 
-<div align="center" display="flex">
-     <img src="captura.png" alt="Sección de configuración" width="100%" >
-  </div>
